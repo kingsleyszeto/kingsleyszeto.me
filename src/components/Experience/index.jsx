@@ -67,7 +67,7 @@ function Experience() {
       </h2>
       <div className="route-container">
         <svg className="route">
-          <path id="route-two" stroke="#B933AD" fill="none" d="M -450 315 L 50 315 Q 160 315 160 265 L 160 0 Q 160 -50 210 -50 L 1500 -50 " />
+          <path id="route-two" stroke="#B933AD" fill="none" d="M -450 315 L 110 315 Q 160 315 160 265 L 160 0 Q 160 -50 210 -50 L 1500 -50 " />
         </svg>
       </div>
       <Train id="tr2" stroke="#B933AD" />
