@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kingsleyszeto.me/static/css/main.5b889d1c.css",
-    "main.js": "/kingsleyszeto.me/static/js/main.94887373.js",
-    "static/js/787.9b9c0edf.chunk.js": "/kingsleyszeto.me/static/js/787.9b9c0edf.chunk.js",
-    "index.html": "/kingsleyszeto.me/index.html",
-    "main.5b889d1c.css.map": "/kingsleyszeto.me/static/css/main.5b889d1c.css.map",
-    "main.94887373.js.map": "/kingsleyszeto.me/static/js/main.94887373.js.map",
-    "787.9b9c0edf.chunk.js.map": "/kingsleyszeto.me/static/js/787.9b9c0edf.chunk.js.map"
+    "main.css": "/static/css/main.5b889d1c.css",
+    "main.js": "/static/js/main.e62ce3d3.js",
+    "static/js/787.9b9c0edf.chunk.js": "/static/js/787.9b9c0edf.chunk.js",
+    "index.html": "/index.html",
+    "main.5b889d1c.css.map": "/static/css/main.5b889d1c.css.map",
+    "main.e62ce3d3.js.map": "/static/js/main.e62ce3d3.js.map",
+    "787.9b9c0edf.chunk.js.map": "/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b889d1c.css",
-    "static/js/main.94887373.js"
+    "static/js/main.e62ce3d3.js"
   ]
 }
