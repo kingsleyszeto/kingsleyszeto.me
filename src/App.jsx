@@ -3,6 +3,7 @@ import './App.scss';
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Content from './components/Content';
+import RightRail from './components/RightRail';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Row id="site">
         <Col />
         <Content />
-        <Col />
+        <RightRail />
       </Row>
     </Container>
   );

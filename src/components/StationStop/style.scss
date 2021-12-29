@@ -1,12 +1,12 @@
-.station-container{
+.station-container.base{
   position: relative;
   
-  .station{
+  .station.base{
     position: absolute;
     top: 17.5px;
     left: -140px;
   
-    background: black;
+    background: #010203;
     border-radius: 50%;
   
     width: 40px;
@@ -15,7 +15,134 @@
     padding: 0px;
   }
 
-  .inner-stat{ 
+  .inner-stat.base{ 
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.station-container.t2{
+  position: relative;
+  
+  .station.t2{
+    background: #010203;
+    border-radius: 50%;
+  
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (max-width: 1275px){
+    .station.t2{
+      position: absolute;
+      left: -64px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1276px){
+    .station.t2{
+      position: absolute;
+      left: -64px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1280px){
+    .station.t2{
+      position: absolute;
+      left: -65px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1280px){
+    .station.t2{
+      position: absolute;
+      left: -70px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1310px){
+    .station.t2{
+      position: absolute;
+      left: -77px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1325px){
+    .station.t2{
+      position: absolute;
+      left: -85px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1350px){
+    .station.t2{
+      position: absolute;
+      left: -90px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1375px){
+    .station.t2{
+      position: absolute;
+      left: -100px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1400px){
+    .station.t2{
+      position: absolute;
+      left: -110px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1425px){
+    .station.t2{
+      position: absolute;
+      left: -116px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1450px){
+    .station.t2{
+      position: absolute;
+      left: -125px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1475px){
+    .station.t2{
+      position: absolute;
+      left: -133px;
+      top: -42px;
+    }
+  }
+
+  @media (min-width: 1500px){
+    .station.t2{
+      position: absolute;
+      left: -144px;
+      top: -42px;
+    }
+  }
+
+  .inner-stat.t2{ 
     margin-top: 10px;
     margin-left: 10px;
     position: absolute;

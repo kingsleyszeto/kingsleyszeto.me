@@ -54,10 +54,11 @@ function AboutMe() {
           '808183',
         ]}
         letters="2022CS"
+        url="https://www.ics.uci.edu/"
       />
       <br />
       <span>
-        I'm a senior computer science major graduating
+        I'm a senior computer science major about to graduate
         from
         {' '}
         <a href="https://www.ics.uci.edu/">UC Irvine</a>

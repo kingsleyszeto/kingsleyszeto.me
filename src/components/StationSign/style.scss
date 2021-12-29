@@ -1,13 +1,18 @@
 div.subway-sign-container{
   position: relative;
   z-index: 3;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 div.subway-sign{
   font-family: Helvetica;
   text-align: center;
 
-  background-color: black;
+  background-color: #010203;
   color: white;
 
   line-height: 70px;

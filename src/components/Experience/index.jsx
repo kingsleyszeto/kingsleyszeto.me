@@ -85,6 +85,7 @@ function Experience() {
           'EE352E',
         ]}
         letters="FALL2021"
+        url="https://www.coinbase.com"
       />
       <JobDesc id="cb" title="Software Engineering Intern">
         <p>
@@ -105,6 +106,7 @@ function Experience() {
           'FCCC0A',
         ]}
         letters="SUMM2021"
+        url="https://www.policygenius.com"
       />
       <JobDesc id="pg" title="Software Engineering Intern">
         <p>
@@ -127,6 +129,7 @@ function Experience() {
           'B933AD',
         ]}
         letters="SUMM2021"
+        url="https://openaq.org/#/"
       />
       <JobDesc id="oaq" title="Developer">
         <p>
@@ -155,6 +158,7 @@ function Experience() {
           'FF6319',
         ]}
         letters="2021&LYF"
+        url="https://hackny.org"
       />
       <JobDesc id="hny" title="AlumNY, Admissions Committee & Previous Fellow">
         <p>
@@ -176,6 +180,7 @@ function Experience() {
           '00933C',
         ]}
         letters="2020NOW"
+        url="https://hack.ics.uci.edu"
       />
       <JobDesc id="huci" title="Corporate Outreach Director">
         <p>
@@ -191,12 +196,13 @@ function Experience() {
           'FF6319',
           '0039A6',
           'FCCC0A',
-          '000000',
+          '010203',
           '0039A6',
           '808183',
           '6CBE45',
         ]}
         letters="MAR AUG"
+        url="https://www.missionbit.org"
       />
       <JobDesc id="mb" title="Volunteer">
         <p>
@@ -219,6 +225,7 @@ function Experience() {
           'FF6319',
         ]}
         letters="20192020"
+        url="https://www.ess.uci.edu"
       />
       <JobDesc id="uciess" title="Undergraduate Research Assistant">
         <p>

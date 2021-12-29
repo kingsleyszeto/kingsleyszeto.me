@@ -5,10 +5,10 @@ import './style.scss';
 import StationStop from '../StationStop';
 
 function TrainLineCircle(color, letter, index) {
-  if (color === 'FCCC0A' || color === '000000') {
+  if (color === 'FCCC0A' || color === '010203') {
     return (
       <div className="station-mark" style={{ backgroundColor: `#${color}` }} key={color + index.toString()}>
-        <strong style={{ color: '#000000' }}>
+        <strong style={{ color: '#010203' }}>
           {letter}
         </strong>
       </div>
@@ -29,13 +29,16 @@ function StationSign(props) {
     nameSize,
     colors,
     letters,
+    url,
+    type,
   } = props;
+
   return (
     <div className="subway-sign-container">
-      <StationStop />
+      <StationStop type={type} />
       <div className="subway-sign">
         <div className="subway-sign col1">
-          <strong style={{ fontSize: `${nameSize}px` }}>{name}</strong>
+          <a target="_blank" href={url} rel="noreferrer"><strong style={{ fontSize: `${nameSize}px` }}>{name}</strong></a>
         </div>
         <div className="subway-sign col2">
           {colors.map((color, index) => (
