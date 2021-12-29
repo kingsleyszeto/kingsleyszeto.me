@@ -1,0 +1,56 @@
+.content{
+    font-family: Open Sans;
+    width: 700px;
+    justify-content: center;
+}
+
+p, span {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.route-container{
+    height: 0px;
+    width: 0px;
+  
+    svg.route{
+      position: relative;
+      overflow: visible;
+    
+      left: -270px;
+  
+      path{
+        stroke-width: 10px;
+        position: absolute;
+      }
+    }
+}
+
+.train-container{
+    height: 0px;
+    width: 0px;
+
+    .train {
+        position: relative;
+        top: -15px;
+        left: -295px;
+        height: 30px;
+        width: 50px;
+        z-index: 1;
+    }
+}
+
+.train#tr1{
+    background-color: #0039A6;
+}
+
+.train#tr2{
+    background-color: #B933AD;
+}
+
+.train#tr3{
+    background-color: #EE352E;
+}

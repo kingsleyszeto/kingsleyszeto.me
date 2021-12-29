@@ -1,0 +1,47 @@
+div.subway-sign-container{
+  position: relative;
+  z-index: 3;
+}
+
+div.subway-sign{
+  font-family: Helvetica;
+  text-align: center;
+
+  background-color: black;
+  color: white;
+
+  line-height: 70px;
+  align-items: center;
+  height: 70px;
+  width: 400px;
+  padding-bottom: 25px;
+}
+
+div.subway-sign.col1{
+  width: 66%;
+  float: left;
+}
+
+div.subway-sign.col2{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  position: relative;
+  background: transparent;
+  height: 100%;
+  width: 33%;
+  float: left;
+  display: grid;
+  grid-template-columns: 32px 32px 32px 32px;
+  grid-template-rows: 32px 32px;
+  align-items: center;
+}
+
+div.station-mark{
+  text-align: center;
+  font-size: 23px;
+  line-height: 30px;
+  color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;   
+}

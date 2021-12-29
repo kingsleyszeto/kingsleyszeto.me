@@ -1,0 +1,27 @@
+.station-container{
+  position: relative;
+  
+  .station{
+    position: absolute;
+    top: 17.5px;
+    left: -140px;
+  
+    background: black;
+    border-radius: 50%;
+  
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .inner-stat{ 
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+}
