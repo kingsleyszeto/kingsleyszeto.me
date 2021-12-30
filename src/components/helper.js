@@ -17,7 +17,7 @@ function runTrains(trains, animationRef, pathRef, pathID, duration, spacing) {
       loop: true,
       easing: 'linear',
     });
-    delay += spacing + Math.random() * 2000 - 1000;
+    delay += spacing + Math.random() * 1000 - 500;
   });
 }
 
