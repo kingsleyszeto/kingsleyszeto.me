@@ -1,10 +1,10 @@
 body{
-  overflow-x: hidden;
+  overflow-x: clip;
 
   a {
     color: #010203;
   }
-
+  
   #site{
     padding-top: 50px;
     padding-bottom: 150px;

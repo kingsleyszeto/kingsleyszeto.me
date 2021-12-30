@@ -67,7 +67,7 @@ function Experience() {
       </h2>
       <div className="route-container">
         <svg className="route">
-          <path id="route-two" stroke="#B933AD" fill="none" d="M -450 315 L 110 315 Q 160 315 160 265 L 160 0 Q 160 -50 210 -50 L 1500 -50 " />
+          <path id="route-two" stroke="#B933AD" fill="none" d="M -850 315 L 110 315 Q 160 315 160 265 L 160 0 Q 160 -50 210 -50 L 1800 -50 " />
         </svg>
       </div>
       <Train id="tr2" color="#B933AD" />
@@ -140,7 +140,7 @@ function Experience() {
       </JobDesc>
       <div className="route-container">
         <svg className="route">
-          <path id="route-three" stroke="#EE352E" fill="none" d="M -505 38 L 795 38 Q 845 38 845 -12 L 845 -1400 " />
+          <path id="route-three" stroke="#EE352E" fill="none" d="M -1005 38 L 795 38 Q 845 38 845 -12 L 845 -1400 " />
         </svg>
       </div>
       <Train id="tr3" color="#EE352E" />
@@ -235,7 +235,7 @@ function Experience() {
       </JobDesc>
       <div className="route-container">
         <svg className="route">
-          <path id="route-four" stroke="#FCCC0A" fill="none" d="M -300 -1637 L 90 -1637 Q 140 -1637 140 -1587 L 140 -740 Q 140 -640 240 -540 L 1240 460 " />
+          <path id="route-four" stroke="#FCCC0A" fill="none" d="M -1000 -1637 L 90 -1637 Q 140 -1637 140 -1587 L 140 -740 Q 140 -640 240 -540 L 1240 460 " />
         </svg>
       </div>
       <Train id="tr4" color="#FCCC0A" />
