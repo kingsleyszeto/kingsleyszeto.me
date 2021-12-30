@@ -9,7 +9,7 @@ function App() {
   return (
     <Container fluid>
       <Row id="site">
-        <Col />
+        <Col className="rail" />
         <Content />
         <RightRail />
       </Row>

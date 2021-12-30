@@ -1,7 +1,7 @@
 .content{
     font-family: Open Sans;
+    // justify-content: center;
     width: 700px;
-    justify-content: center;
 }
 
 p, span {
@@ -41,16 +41,4 @@ h2 {
         width: 50px;
         z-index: 1;
     }
-}
-
-.train#tr1{
-    background-color: #0039A6;
-}
-
-.train#tr2{
-    background-color: #B933AD;
-}
-
-.train#tr3{
-    background-color: #EE352E;
 }

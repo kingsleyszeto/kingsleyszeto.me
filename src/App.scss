@@ -1,9 +1,24 @@
 body{
-  margin-top: 50px;
-  max-width: 100%;
   overflow-x: hidden;
 
   a {
     color: #010203;
+  }
+
+  #site{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    overflow-y: clip;
+  }
+
+  @media (max-width: 475px){
+    .rail{
+      display: none;
+    }
+
+    .content{
+      max-width: 100%;
+      overflow-x: clip;
+    }
   }
 }

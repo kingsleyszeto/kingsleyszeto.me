@@ -1,14 +1,10 @@
 .train-container{
   height: 0px;
   width: 0px;
-  clip: rect(auto, auto, auto, auto);
+  position: relative;
+  // overflow: hidden;
 
   .train {
-      position: relative;
-      top: -15px;
-      left: -295px;
-      height: 30px;
-      width: 50px;
-      overflow-x: hidden;
+      position: absolute;
   }
 }

@@ -70,7 +70,7 @@ function Experience() {
           <path id="route-two" stroke="#B933AD" fill="none" d="M -450 315 L 110 315 Q 160 315 160 265 L 160 0 Q 160 -50 210 -50 L 1500 -50 " />
         </svg>
       </div>
-      <Train id="tr2" stroke="#B933AD" />
+      <Train id="tr2" color="#B933AD" />
       <StationSign
         name="Coinbase"
         nameSize={52}
@@ -140,10 +140,10 @@ function Experience() {
       </JobDesc>
       <div className="route-container">
         <svg className="route">
-          <path id="route-three" stroke="#EE352E" fill="none" d="M -500 38 L 800 38 Q 850 38 850 -12 L 850 -1400" />
+          <path id="route-three" stroke="#EE352E" fill="none" d="M -505 38 L 795 38 Q 845 38 845 -12 L 845 -1400 " />
         </svg>
       </div>
-      <Train id="tr3" stroke="#EE352E" />
+      <Train id="tr3" color="#EE352E" />
       <StationSign
         name="HackNY"
         nameSize={55}

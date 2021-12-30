@@ -7,16 +7,29 @@ import StationSign from '../StationSign';
 import Train from '../Train';
 
 function AboutMe() {
-  const path = useRef(null);
+  const pathOne = useRef(null);
+  const pathFive = useRef(null);
   const animationRef = useRef(null);
   useEffect(() => {
-    path.current = anime.path('path#route-one');
+    pathOne.current = anime.path('path#route-one');
     animationRef.current = anime({
       targets: '.train#tr1',
-      translateX: path.current('x'),
-      translateY: path.current('y'),
-      rotate: path.current('angle'),
-      duration: 10000,
+      translateX: pathOne.current('x'),
+      translateY: pathOne.current('y'),
+      rotate: pathOne.current('angle'),
+      duration: 15000,
+      direction: 'alternate',
+      autoplay: true,
+      loop: true,
+      easing: 'linear',
+    });
+    pathFive.current = anime.path('path#route-five');
+    animationRef.current = anime({
+      targets: '.train#tr5',
+      translateX: pathFive.current('x'),
+      translateY: pathFive.current('y'),
+      rotate: pathFive.current('angle'),
+      duration: 17000,
       direction: 'alternate',
       autoplay: true,
       loop: true,
@@ -28,10 +41,12 @@ function AboutMe() {
     <div id="about-me">
       <div className="route-container">
         <svg className="route">
-          <path id="route-one" stroke="#0039A6" fill="none" d="M -100 -100 L 100 100 Q 150 150 150 200 L 150 2500 " />
+          <path id="route-one" stroke="#0039A6" fill="none" d="M -100 -100 L 100 100 Q 150 150 150 200 L 150 3500 " />
+          <path id="route-five" stroke="#00933C" fill="none" d="M 955 -150 L 905 -100 Q 855 -50 855 0 L 855 3550 " />
         </svg>
       </div>
       <Train id="tr1" color="#0039A6" />
+      <Train id="tr5" color="#00933C" />
       <span id="hey">Hey, I'm</span>
       <br />
       <span id="name">Kingsley Szeto</span>
