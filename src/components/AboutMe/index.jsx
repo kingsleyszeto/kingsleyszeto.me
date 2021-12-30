@@ -14,7 +14,7 @@ function AboutMe() {
   const pathFive = useRef(null);
   const animationRef = useRef(null);
   useEffect(() => {
-    runTrains(lineOneTrains, animationRef, pathOne, 'route-one', 15000, 7500);
+    runTrains(lineOneTrains, animationRef, pathOne, 'route-one', 14000, 7000);
     runTrains(lineFiveTrains, animationRef, pathFive, 'route-five', 14000, 7000);
   }, []);
 
@@ -22,7 +22,7 @@ function AboutMe() {
     <div id="about-me">
       <div className="route-container">
         <svg className="route">
-          <path id="route-one" stroke="#0039A6" fill="none" d="M -400 -400 L 100 100 Q 150 150 150 200 L 150 3500 " />
+          <path id="route-one" stroke="#0039A6" fill="none" d="M -150 -150 L 100 100 Q 150 150 150 200 L 150 3500 " />
           <path id="route-five" stroke="#00933C" fill="none" d="M 955 -150 L 905 -100 Q 855 -50 855 0 L 855 3550 " />
         </svg>
       </div>
