@@ -2,51 +2,32 @@
 import React, { useEffect, useRef } from 'react';
 import './style.scss';
 
-import { anime } from 'react-anime';
 import StationSign from '../StationSign';
 import Train from '../Train';
+import runTrains from '../helper';
 
 function AboutMe() {
+  const lineOneTrains = ['tr1', 'tr2', 'tr3', 'tr4'];
+  const lineFiveTrains = ['tr5', 'tr6', 'tr7', 'tr8'];
+
   const pathOne = useRef(null);
   const pathFive = useRef(null);
   const animationRef = useRef(null);
   useEffect(() => {
-    pathOne.current = anime.path('path#route-one');
-    animationRef.current = anime({
-      targets: '.train#tr1',
-      translateX: pathOne.current('x'),
-      translateY: pathOne.current('y'),
-      rotate: pathOne.current('angle'),
-      duration: 15000,
-      direction: 'alternate',
-      autoplay: true,
-      loop: true,
-      easing: 'linear',
-    });
-    pathFive.current = anime.path('path#route-five');
-    animationRef.current = anime({
-      targets: '.train#tr5',
-      translateX: pathFive.current('x'),
-      translateY: pathFive.current('y'),
-      rotate: pathFive.current('angle'),
-      duration: 17000,
-      direction: 'alternate',
-      autoplay: true,
-      loop: true,
-      easing: 'linear',
-    });
+    runTrains(lineOneTrains, animationRef, pathOne, 'route-one', 15000, 7500);
+    runTrains(lineFiveTrains, animationRef, pathFive, 'route-five', 14000, 7000);
   }, []);
 
   return (
     <div id="about-me">
       <div className="route-container">
         <svg className="route">
-          <path id="route-one" stroke="#0039A6" fill="none" d="M -100 -100 L 100 100 Q 150 150 150 200 L 150 3500 " />
+          <path id="route-one" stroke="#0039A6" fill="none" d="M -400 -400 L 100 100 Q 150 150 150 200 L 150 3500 " />
           <path id="route-five" stroke="#00933C" fill="none" d="M 955 -150 L 905 -100 Q 855 -50 855 0 L 855 3550 " />
         </svg>
       </div>
-      <Train id="tr1" color="#0039A6" />
-      <Train id="tr5" color="#00933C" />
+      <Train ids={lineOneTrains} color="#0039A6" />
+      <Train ids={lineFiveTrains} color="#00933C" />
       <span id="hey">Hey, I'm</span>
       <br />
       <span id="name">Kingsley Szeto</span>

@@ -2,9 +2,9 @@
 import React, { useEffect, useRef } from 'react';
 import './style.scss';
 
-import { anime } from 'react-anime';
 import StationSign from '../StationSign';
 import Train from '../Train';
+import runTrains from '../helper';
 
 function JobDesc(props) {
   const { title, children, id } = props;
@@ -17,47 +17,18 @@ function JobDesc(props) {
 }
 
 function Experience() {
+  const lineTwoTrains = ['tr9', 'tr10', 'tr11', 'tr12'];
+  const lineThreeTrains = ['tr13', 'tr14', 'tr15', 'tr16'];
+  const lineFourTrains = ['tr17', 'tr18', 'tr19', 'tr20'];
+
   const pathTwo = useRef(null);
   const pathThree = useRef(null);
   const pathFour = useRef(null);
   const animationRef = useRef(null);
   useEffect(() => {
-    pathTwo.current = anime.path('path#route-two');
-    animationRef.current = anime({
-      targets: '.train#tr2',
-      translateX: pathTwo.current('x'),
-      translateY: pathTwo.current('y'),
-      rotate: pathTwo.current('angle'),
-      duration: 9000,
-      direction: 'alternate',
-      autoplay: true,
-      loop: true,
-      easing: 'linear',
-    });
-    pathThree.current = anime.path('path#route-three');
-    animationRef.current = anime({
-      targets: '.train#tr3',
-      translateX: pathThree.current('x'),
-      translateY: pathThree.current('y'),
-      rotate: pathThree.current('angle'),
-      duration: 13000,
-      direction: 'alternate',
-      autoplay: true,
-      loop: true,
-      easing: 'linear',
-    });
-    pathFour.current = anime.path('path#route-four');
-    animationRef.current = anime({
-      targets: '.train#tr4',
-      translateX: pathFour.current('x'),
-      translateY: pathFour.current('y'),
-      rotate: pathFour.current('angle'),
-      duration: 10000,
-      direction: 'alternate',
-      autoplay: true,
-      loop: true,
-      easing: 'linear',
-    });
+    runTrains(lineTwoTrains, animationRef, pathTwo, 'route-two', 9000, 4500);
+    runTrains(lineThreeTrains, animationRef, pathThree, 'route-three', 13000, 6500);
+    runTrains(lineFourTrains, animationRef, pathFour, 'route-four', 10000, 5000);
   }, []);
 
   return (
@@ -70,7 +41,7 @@ function Experience() {
           <path id="route-two" stroke="#B933AD" fill="none" d="M -850 315 L 110 315 Q 160 315 160 265 L 160 0 Q 160 -50 210 -50 L 1800 -50 " />
         </svg>
       </div>
-      <Train id="tr2" color="#B933AD" />
+      <Train ids={lineTwoTrains} color="#B933AD" />
       <StationSign
         name="Coinbase"
         nameSize={52}
@@ -143,7 +114,7 @@ function Experience() {
           <path id="route-three" stroke="#EE352E" fill="none" d="M -1005 38 L 795 38 Q 845 38 845 -12 L 845 -1400 " />
         </svg>
       </div>
-      <Train id="tr3" color="#EE352E" />
+      <Train ids={lineThreeTrains} color="#EE352E" />
       <StationSign
         name="HackNY"
         nameSize={55}
@@ -238,7 +209,7 @@ function Experience() {
           <path id="route-four" stroke="#FCCC0A" fill="none" d="M -1000 -1637 L 90 -1637 Q 140 -1637 140 -1587 L 140 -740 Q 140 -640 240 -540 L 1240 460 " />
         </svg>
       </div>
-      <Train id="tr4" color="#FCCC0A" />
+      <Train ids={lineFourTrains} color="#FCCC0A" />
     </div>
   );
 }
