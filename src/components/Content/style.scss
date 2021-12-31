@@ -28,18 +28,3 @@ h2 {
       }
     }
 }
-
-.train-container{
-    height: 0px;
-    width: 0px;
-
-    .train {
-        position: relative;
-        top: -15px;
-        left: -295px;
-        height: 30px;
-        width: 50px;
-        z-index: 1;
-        overflow: clip;
-    }
-}

@@ -4,7 +4,7 @@ import './style.scss';
 
 import StationSign from '../StationSign';
 import Train from '../Train';
-import runTrains from '../helper';
+import { NUM_TRAINS, runTrains } from '../helper';
 
 function JobDesc(props) {
   const { title, children, id } = props;
@@ -17,18 +17,14 @@ function JobDesc(props) {
 }
 
 function Experience() {
-  const lineTwoTrains = ['tr9', 'tr10', 'tr11', 'tr12'];
-  const lineThreeTrains = ['tr13', 'tr14', 'tr15', 'tr16'];
-  const lineFourTrains = ['tr17', 'tr18', 'tr19', 'tr20'];
-
   const pathTwo = useRef(null);
   const pathThree = useRef(null);
   const pathFour = useRef(null);
   const animationRef = useRef(null);
   useEffect(() => {
-    runTrains(lineTwoTrains, animationRef, pathTwo, 'route-two', 9000, 4500);
-    runTrains(lineThreeTrains, animationRef, pathThree, 'route-three', 13000, 6500);
-    runTrains(lineFourTrains, animationRef, pathFour, 'route-four', 10000, 5000);
+    runTrains('two', animationRef, pathTwo, 'route-two');
+    runTrains('three', animationRef, pathThree, 'route-three');
+    runTrains('four', animationRef, pathFour, 'route-four');
   }, []);
 
   return (
@@ -41,7 +37,7 @@ function Experience() {
           <path id="route-two" stroke="#B933AD" fill="none" d="M -850 315 L 110 315 Q 160 315 160 265 L 160 0 Q 160 -50 210 -50 L 1800 -50 " />
         </svg>
       </div>
-      <Train ids={lineTwoTrains} color="#B933AD" />
+      <Train line="two" amount={NUM_TRAINS.two} color="#B933AD" />
       <StationSign
         name="Coinbase"
         nameSize={52}
@@ -114,7 +110,7 @@ function Experience() {
           <path id="route-three" stroke="#EE352E" fill="none" d="M -1005 38 L 795 38 Q 845 38 845 -12 L 845 -1400 " />
         </svg>
       </div>
-      <Train ids={lineThreeTrains} color="#EE352E" />
+      <Train line="three" amount={NUM_TRAINS.three} color="#EE352E" />
       <StationSign
         name="HackNY"
         nameSize={55}
@@ -179,7 +175,7 @@ function Experience() {
         <p>
           Aided an instructor-volunteer to teach web development to
           underserved San Fransico high-schoolers. Also mentored a
-          college senior 1:1 to develop a college and career plan.
+          high-school senior 1:1 to develop a college and career plan.
         </p>
       </JobDesc>
       <StationSign
@@ -209,7 +205,7 @@ function Experience() {
           <path id="route-four" stroke="#FCCC0A" fill="none" d="M -1000 -1637 L 90 -1637 Q 140 -1637 140 -1587 L 140 -740 Q 140 -640 240 -540 L 1240 460 " />
         </svg>
       </div>
-      <Train ids={lineFourTrains} color="#FCCC0A" />
+      <Train line="four" amount={NUM_TRAINS.four} color="#FCCC0A" />
     </div>
   );
 }

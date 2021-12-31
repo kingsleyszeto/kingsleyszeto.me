@@ -4,18 +4,22 @@ import './style.scss';
 
 import StationSign from '../StationSign';
 import Train from '../Train';
-import runTrains from '../helper';
+import {
+  NUM_TRAINS, runTrains, spawnLines, spawnClass,
+} from '../helper';
 
 function AboutMe() {
-  const lineOneTrains = ['tr1', 'tr2', 'tr3', 'tr4'];
-  const lineFiveTrains = ['tr5', 'tr6', 'tr7', 'tr8'];
-
   const pathOne = useRef(null);
   const pathFive = useRef(null);
   const animationRef = useRef(null);
+  const pathAnimationRef = useRef(null);
+  const stationStopAnimationRef = useRef(null);
+
   useEffect(() => {
-    runTrains(lineOneTrains, animationRef, pathOne, 'route-one', 14000, 7000);
-    runTrains(lineFiveTrains, animationRef, pathFive, 'route-five', 14000, 7000);
+    spawnLines(pathAnimationRef);
+    spawnClass(stationStopAnimationRef, 'subway-sign-container');
+    runTrains('one', animationRef, pathOne, 'route-one');
+    runTrains('five', animationRef, pathFive, 'route-five');
   }, []);
 
   return (
@@ -26,8 +30,8 @@ function AboutMe() {
           <path id="route-five" stroke="#00933C" fill="none" d="M 955 -150 L 905 -100 Q 855 -50 855 0 L 855 3550 " />
         </svg>
       </div>
-      <Train ids={lineOneTrains} color="#0039A6" />
-      <Train ids={lineFiveTrains} color="#00933C" />
+      <Train line="one" amount={NUM_TRAINS.one} color="#0039A6" />
+      <Train line="five" amount={NUM_TRAINS.five} color="#00933C" />
       <span id="hey">Hey, I'm</span>
       <br />
       <span id="name">Kingsley Szeto</span>

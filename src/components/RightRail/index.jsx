@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './style.scss';
 
 import Col from 'react-bootstrap/Col';
 import IconStop from '../IconStop';
+import { spawnClass } from '../helper';
 
 function RightRail() {
+  const stationStopAnimationRef = useRef(null);
+  useEffect(() => {
+    spawnClass(stationStopAnimationRef, 'social-link');
+  }, []);
   return (
     <Col className="rail">
       <div className="right-rail">

@@ -4,7 +4,11 @@ body{
   a {
     color: #010203;
   }
-  
+
+  p, span, h3, h4, strong {
+    opacity: 0;
+  }
+
   #site{
     padding-top: 50px;
     padding-bottom: 150px;
