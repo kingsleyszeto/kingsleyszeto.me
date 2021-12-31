@@ -7,9 +7,9 @@ import { anime } from 'react-anime';
 
 export const NUM_TRAINS = {
   one: 8,
-  two: 8,
-  three: 8,
-  four: 8,
+  two: 6,
+  three: 6,
+  four: 6,
   five: 8,
 };
 
