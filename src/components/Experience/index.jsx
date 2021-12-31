@@ -153,7 +153,7 @@ function Experience() {
         <p>
           Director for the cool people behind HackUCI and ZotHacks
           - UCI&apos;s premiere hackathons. Also worked with WICS to
-          setup VenusHacks - UCI&apos;s first women-centric hackathon.
+          organize VenusHacks - UCI&apos;s first women-centric hackathon.
         </p>
       </JobDesc>
       <StationSign

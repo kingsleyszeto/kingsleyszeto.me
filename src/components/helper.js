@@ -6,11 +6,11 @@
 import { anime } from 'react-anime';
 
 export const NUM_TRAINS = {
-  one: 8,
-  two: 6,
-  three: 6,
+  one: 6,
+  two: 4,
+  three: 4,
   four: 6,
-  five: 8,
+  five: 6,
 };
 
 export const NUM_CARS = 2;
