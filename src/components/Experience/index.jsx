@@ -39,11 +39,55 @@ function Experience() {
       </div>
       <Train line="two" amount={NUM_TRAINS.two} color="#B933AD" />
       <StationSign
+        name="Coinbase - Risk"
+        nameSize={32}
+        colors={[
+          'EE352E',
+          '0039A6',
+          'EE352E',
+          'EE352E',
+          'FCCC0A',
+          'FCCC0A',
+          'B933AD',
+          'B933AD',
+        ]}
+        letters="20222024"
+        url="https://www.coinbase.com"
+      />
+      <JobDesc id="cb-risk-fte" title="Software Engineer">
+        <p>
+          Making magic internet money less magical for bad actors
+          and fraudsters.
+        </p>
+      </JobDesc>
+      <StationSign
+        name="Coinbase - Card"
+        nameSize={32}
+        colors={[
+          'EE352E',
+          'EE352E',
+          'EE352E',
+          'FF6319',
+          'EE352E',
+          '0039A6',
+          'FCCC0A',
+          'FCCC0A',
+        ]}
+        letters="20212022"
+        url="https://www.coinbase.com"
+      />
+      <JobDesc id="cb-card-fte" title="Software Engineer">
+        <p>
+          Helped make magic internet money more rewarding. Assisted in the official
+          public launch of the Coinbase Card.
+        </p>
+      </JobDesc>
+      <StationSign
         name="Coinbase"
         nameSize={52}
         colors={[
           'FF6319',
-          'FCCC0A',
+          '0039A6',
           'A7A9AC',
           'A7A9AC',
           'EE352E',
@@ -107,7 +151,7 @@ function Experience() {
       </JobDesc>
       <div className="route-container">
         <svg className="route">
-          <path id="route-three" stroke="#EE352E" fill="none" d="M -1005 38 L 795 38 Q 845 38 845 -12 L 845 -1400 " />
+          <path id="route-three" stroke="#EE352E" fill="none" d="M -1005 38 L 795 38 Q 845 38 845 -12 L 845 -2000 " />
         </svg>
       </div>
       <Train line="three" amount={NUM_TRAINS.three} color="#EE352E" />
