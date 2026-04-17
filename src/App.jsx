@@ -16,8 +16,7 @@ function App() {
       return storedTheme;
     }
 
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return prefersDark ? 'dark' : 'light';
+    return 'light';
   });
 
   const handleCitySwitch = (next) => {
