@@ -137,15 +137,16 @@ export function runTrains(line, animationRef, pathRef, pathID, reversePathRef, r
     runOnce(initialDelay);
   };
 
-  // Stagger initial arrivals using Poisson inter-arrival times so trains are
-  // spread out from the start rather than all appearing simultaneously.
-  let forwardDelay = 0;
+  // Seed initial delays with a random offset across the full duration so no two
+  // lines (or directions) bunch up at t=0 on load. Subsequent arrivals continue
+  // the Poisson process from there.
+  let forwardDelay = Math.random() * dur;
   for (let i = 0; i < NUM_FORWARD; i++) {
     scheduleRun(i, pathRef, forwardDelay);
     forwardDelay += sampleExpInterval(rate);
   }
 
-  let reverseDelay = 0;
+  let reverseDelay = Math.random() * dur;
   for (let i = 0; i < NUM_REVERSE; i++) {
     scheduleRun(NUM_FORWARD + i, reversePathRef, reverseDelay);
     reverseDelay += sampleExpInterval(rate);
