@@ -99,7 +99,14 @@ function AboutMe({ city }) {
       <StationSign
         name="UC Irvine"
         nameSize={53}
-        colors={[
+        colors={isSF ? [
+          '0099D8',
+          'F9E300',
+          'D7373F',
+          '009A44',
+          'F48FB1',
+          '0099D8',
+        ] : [
           'EE352E',
           'FCCC0A',
           'EE352E',

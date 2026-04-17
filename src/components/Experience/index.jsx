@@ -18,6 +18,13 @@ function JobDesc(props) {
 
 const SF_TRAM_COLOR = '#F48FB1';
 
+// SF Muni track palette (route-one → route-five colors)
+const SF_COLORS = ['0099D8', 'F9E300', 'D7373F', '009A44', 'F48FB1'];
+const sfPalette = (count, offset = 0) => Array.from(
+  { length: count },
+  (_, i) => SF_COLORS[(i + offset) % SF_COLORS.length],
+);
+
 function Experience({ city }) {
   const isSF = city === 'sf';
   const pathTwo = useRef(null);
@@ -65,7 +72,7 @@ function Experience({ city }) {
       <StationSign
         name="Rippling - Payroll"
         nameSize={30}
-        colors={[
+        colors={isSF ? sfPalette(8, 0) : [
           '6CBE45',
           '6CBE45',
           '0039A6',
@@ -86,7 +93,7 @@ function Experience({ city }) {
       <StationSign
         name="Coinbase - Risk"
         nameSize={32}
-        colors={[
+        colors={isSF ? sfPalette(8, 1) : [
           'EE352E',
           '0039A6',
           'EE352E',
@@ -110,7 +117,7 @@ function Experience({ city }) {
           <svg className="route">
             <path id="route-five" stroke={SF_TRAM_COLOR} fill="none" d="M -1000 38 L 820 38 Q 855 38 855 8 L 855 -2000" />
             {/* Reverse of route-five — invisible, for reverse-direction trains */}
-            <path id="route-five-r" stroke="none" fill="none" d="M 855 -2000 L 855 18 Q 855 48 820 48 L -1000 48" />
+            <path id="route-five-r" stroke="none" fill="none" d="M 855 -2000 L 855 8 Q 855 38 820 38 L -1000 38" />
           </svg>
         </div>
       )}
@@ -118,7 +125,7 @@ function Experience({ city }) {
       <StationSign
         name="Coinbase - Card"
         nameSize={32}
-        colors={[
+        colors={isSF ? sfPalette(8, 2) : [
           'EE352E',
           'EE352E',
           'EE352E',
@@ -140,7 +147,7 @@ function Experience({ city }) {
       <StationSign
         name="Coinbase"
         nameSize={52}
-        colors={[
+        colors={isSF ? sfPalette(8, 3) : [
           'FF6319',
           '0039A6',
           'A7A9AC',
@@ -161,7 +168,7 @@ function Experience({ city }) {
       <StationSign
         name="Policygenius"
         nameSize={40}
-        colors={[
+        colors={isSF ? sfPalette(8, 4) : [
           '808183',
           'EE352E',
           'FF6319',
@@ -184,7 +191,7 @@ function Experience({ city }) {
       <StationSign
         name="OpenAQ"
         nameSize={55}
-        colors={[
+        colors={isSF ? sfPalette(8, 0) : [
           '0039A6',
           '0039A6',
           'A7A9AC',
@@ -217,7 +224,7 @@ function Experience({ city }) {
       <StationSign
         name="HackNY"
         nameSize={55}
-        colors={[
+        colors={isSF ? sfPalette(8, 1) : [
           'EE352E',
           'EE352E',
           'EE352E',
@@ -240,7 +247,7 @@ function Experience({ city }) {
       <StationSign
         name="Hack At UCI"
         nameSize={43}
-        colors={[
+        colors={isSF ? sfPalette(7, 2) : [
           'EE352E',
           'EE352E',
           'FCCC0A',
@@ -262,7 +269,7 @@ function Experience({ city }) {
       <StationSign
         name="MissionBit"
         nameSize={47}
-        colors={[
+        colors={isSF ? sfPalette(7, 3) : [
           'FF6319',
           '0039A6',
           'FCCC0A',
@@ -284,7 +291,7 @@ function Experience({ city }) {
       <StationSign
         name="UCI Earth Systems"
         nameSize={27}
-        colors={[
+        colors={isSF ? sfPalette(8, 4) : [
           '0039A6',
           '0039A6',
           '0039A6',

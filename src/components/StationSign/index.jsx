@@ -5,7 +5,7 @@ import './style.scss';
 import StationStop from '../StationStop';
 
 function TrainLineCircle(color, letter, index) {
-  if (color === 'FCCC0A' || color === '010203') {
+  if (color === 'FCCC0A' || color === 'F9E300' || color === '010203') {
     return (
       <div className="station-mark" style={{ backgroundColor: `#${color}` }} key={color + index.toString()}>
         <strong style={{ color: '#010203' }}>
