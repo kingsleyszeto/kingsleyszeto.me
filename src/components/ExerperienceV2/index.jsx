@@ -39,27 +39,6 @@ function Experience() {
       </div>
       <Train line="two" amount={NUM_TRAINS.two} color="#F9E300" />
       <StationSign
-        name="Rippling - Payroll"
-        nameSize={30}
-        colors={[
-          '6CBE45',
-          '6CBE45',
-          '0039A6',
-          '0039A6',
-          'FCCC0A',
-          'FCCC0A',
-          'EE352E',
-          'EE352E',
-        ]}
-        letters="2025NOW!"
-        url="https://www.rippling.com"
-      />
-      <JobDesc id="rippling-payroll" title="Software Engineer">
-        <p>
-          Building payroll systems at Rippling.
-        </p>
-      </JobDesc>
-      <StationSign
         name="Coinbase - Risk"
         nameSize={32}
         colors={[

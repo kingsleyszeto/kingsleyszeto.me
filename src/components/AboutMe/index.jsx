@@ -26,20 +26,18 @@ function AboutMe() {
     <div id="about-me">
       <div className="route-container">
         <svg className="route">
-          <path id="route-one" stroke="#0039A6" fill="none" d="M -150 -150 L 100 100 Q 150 150 150 200 L 150 3500 " />
-          <path id="route-five" stroke="#00933C" fill="none" d="M 955 -150 L 905 -100 Q 855 -50 855 0 L 855 3550 " />
+          <path id="route-one" stroke="#0099D8" fill="none" d="M -150 -150 L 100 100 Q 150 150 150 200 L 150 3500 " />
+          <path id="route-five" stroke="#BA0C2F" fill="none" d="M 955 -150 L 905 -100 Q 855 -50 855 0 L 855 3550 " />
         </svg>
       </div>
-      <Train line="one" amount={NUM_TRAINS.one} color="#0039A6" />
-      <Train line="five" amount={NUM_TRAINS.five} color="#00933C" />
+      <Train line="one" amount={NUM_TRAINS.one} color="#0099D8" />
+      <Train line="five" amount={NUM_TRAINS.five} color="#BA0C2F" />
       <span id="hey">Hey, I'm</span>
       <br />
       <span id="name">Kingsley Szeto</span>
       <br />
       <p>
-        If for some reason you've followed this site
-        up till now there's been a couple
-        of big changes to my life!
+        Website kind of under construction, but thanks for checking in!
       </p>
       <h3><strong>About Me</strong></h3>
       <StationSign
@@ -58,16 +56,9 @@ function AboutMe() {
       />
       <br />
       <span>
-        I'm a senior computer science major about to graduate
-        from
-        {' '}
-        <a href="https://www.ics.uci.edu/">UC Irvine</a>
-        {' '}
-        in March 2022 & incoming software engineer.
-        If you're reading this before May 2022,
-        then I am in Irvine, CA. Otherwise I am in NYC.
-        I'm super passionate about food, urbanism, and
-        a combo of the two - travel!
+        I'm a software engineer living in San Francisco.
+        I moved out of New York in 2025 and settled into SF.
+        I graduated from UC Irvine with a B.S. in Computer Science in 2022.
       </span>
     </div>
   );

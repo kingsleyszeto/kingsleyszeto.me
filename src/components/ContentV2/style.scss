@@ -1,0 +1,36 @@
+.content{
+  font-family: Open Sans;
+  // justify-content: center;
+  max-width: 450px;
+}
+
+p, span {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.route-container{
+  position: relative;
+  height: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  pointer-events: none;
+
+  svg.route{
+    position: relative;
+    display: block;
+    width: 100vw;
+    min-width: 100vw;
+    overflow: visible;
+    left: 0;
+
+    path{
+      stroke-width: clamp(8px, 1vw, 10px);
+      vector-effect: non-scaling-stroke;
+      position: absolute;
+    }
+  }
+}

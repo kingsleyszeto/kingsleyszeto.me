@@ -13,17 +13,23 @@ h2 {
 }
 
 .route-container{
-    height: 0px;
-    width: 0px;
+    position: relative;
+    height: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    pointer-events: none;
   
     svg.route{
       position: relative;
+      display: block;
+      width: 100vw;
+      min-width: 100vw;
       overflow: visible;
-    
-      left: -270px;
+      left: 0;
   
       path{
-        stroke-width: 10px;
+        stroke-width: clamp(8px, 1vw, 10px);
+        vector-effect: non-scaling-stroke;
         position: absolute;
       }
     }
