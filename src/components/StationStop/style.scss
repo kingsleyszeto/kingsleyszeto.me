@@ -26,6 +26,20 @@
   }
 }
 
+// SF mode: pill spanning all 4 interlining tracks
+#site.city-sf .station-container.base {
+  .station.base {
+    left: -135px;
+    width: 60px;
+    border-radius: 999px;
+  }
+
+  .inner-stat.base {
+    width: 40px;
+    border-radius: 999px;
+  }
+}
+
 .station-container.t2{
   position: relative;
 

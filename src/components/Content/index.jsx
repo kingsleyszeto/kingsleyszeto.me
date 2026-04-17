@@ -7,11 +7,12 @@ import Col from 'react-bootstrap/Col';
 import AboutMe from '../AboutMe';
 import Experience from '../Experience';
 
-function Content() {
+/* eslint-disable react/prop-types */
+function Content({ city }) {
   return (
     <Col className="content">
-      <AboutMe />
-      <Experience />
+      <AboutMe city={city} />
+      <Experience city={city} />
     </Col>
   );
 }

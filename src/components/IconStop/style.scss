@@ -1,4 +1,14 @@
 .social-link{
   padding: 55px 0px;
   opacity: 0;
+  color: #010203;
+  transition: color 0.25s ease;
+
+  svg path {
+    fill: currentColor;
+  }
+}
+
+body.theme-dark .social-link {
+  color: #ecf0f5;
 }

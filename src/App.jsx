@@ -46,10 +46,22 @@ function App() {
       <div className="theme-toggle">
         <button
           type="button"
-          aria-label="Toggle night mode"
+          className="icon-toggle"
+          aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to night mode'}
           onClick={() => setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))}
         >
-          {theme === 'dark' ? 'Light mode' : 'Night mode'}
+          <span aria-hidden="true">
+            {theme === 'dark' ? (
+              <svg className="theme-icon" viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="4.5" />
+                <path d="M12 2.5v2.2M12 19.3v2.2M21.5 12h-2.2M4.7 12H2.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5M18.7 18.7l-1.5-1.5M6.8 6.8L5.3 5.3" />
+              </svg>
+            ) : (
+              <svg className="theme-icon" viewBox="0 0 24 24" role="presentation">
+                <path d="M20.5 14.8A8.9 8.9 0 1 1 9.2 3.5a7.1 7.1 0 1 0 11.3 11.3z" />
+              </svg>
+            )}
+          </span>
         </button>
       </div>
       <Row id="site" className={`city-${city}`} key={`scene-${city}-${sceneVersion}`}>

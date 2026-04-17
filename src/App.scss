@@ -55,11 +55,37 @@ body{
       background: #fff;
       color: #010203;
       border-radius: 999px;
-      padding: 3px 10px;
+      padding: 0;
+      width: 34px;
+      height: 34px;
       font-size: 12px;
       font-weight: 700;
-      line-height: 1.4;
+      line-height: 1;
       cursor: pointer;
+      display: grid;
+      place-items: center;
+    }
+
+    button.icon-toggle span {
+      display: grid;
+      place-items: center;
+      width: 18px;
+      height: 18px;
+    }
+
+    button.icon-toggle .theme-icon {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    button.icon-toggle .theme-icon circle {
+      fill: currentColor;
+      stroke: none;
     }
   }
 
