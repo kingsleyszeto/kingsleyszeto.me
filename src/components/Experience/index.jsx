@@ -41,7 +41,7 @@ function Experience({ city }) {
   // Color sets
   const colors = isSF
     ? { two: '#F9E300', three: '#D7373F', four: '#009A44' }
-    : { two: '#F9E300', three: '#D7373F', four: '#009A44' };
+    : { two: '#B933AD', three: '#D7373F', four: '#F9E300' };
 
   useEffect(() => {
     if (isSF) {
